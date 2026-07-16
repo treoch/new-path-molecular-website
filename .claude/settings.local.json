@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.newpathmolecular.com)",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\logo.png\"\\); [Convert]::ToBase64String\\($bytes\\))",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\logo.png\"\\); $b64 = [Convert]::ToBase64String\\($bytes\\); $b64 | Out-File \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\logo_b64.txt\" -Encoding ascii)",
+      "PowerShell(Remove-Item \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\logo_b64.txt\" -Confirm:$false)",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\admin\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\content\")",
+      "PowerShell($bytes = [System.IO.File]::ReadAllBytes\\(\"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\logo.png\"\\); $b64 = [Convert]::ToBase64String\\($bytes\\); Write-Output \"data:image/png;base64,$b64\")",
+      "Bash(extract-text \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\New Path Molecular\\\\new presentation edited by Theodore.pptx\")",
+      "PowerShell(python \"C:\\\\Users\\\\reoch\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\d6d6e1e7-6dc1-4836-8c62-fed818481d91\\\\f8b347a4-6765-49cd-b190-33f18d5009fc\\\\skills\\\\pptx\\\\scripts\\\\extract_text.py\" \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\New Path Molecular\\\\new presentation edited by Theodore.pptx\")",
+      "PowerShell(pip install python-pptx -q)",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(grep -n \"\\\\/\\\\* ── IP ──\\\\|\\\\/\\\\* ── TEAM ──\\\\|\\\\/\\\\* ── DATA ──\" \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\index.html\")",
+      "Bash(grep -n \"moa-sequence\\\\|\\\\/moa-sequence\\\\|APPROACH\\\\|id=\\\\\"approach\\\\\"\" \"C:\\\\Users\\\\reoch\\\\OneDrive\\\\Documents\\\\Claude Code\\\\index.html\")"
+    ]
+  }
+}

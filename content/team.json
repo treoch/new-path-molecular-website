@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "initials": "EF",
+      "name": "Dr Elizabeth Farrant",
+      "role": "Founder & CEO",
+      "bio": "Elizabeth leads New Path Molecular's strategy, business development, and fundraising. Previously Director of Chemical Technologies and Analytical Sciences at Pfizer, she co-founded New Path to translate the PS-targeting platform into first-in-class oncology therapeutics.",
+      "linkedin": "https://www.linkedin.com/in/elizabeth-farrant-1075102/"
+    },
+    {
+      "initials": "NN",
+      "name": "Dr Nikzad Nikbin",
+      "role": "Founder & CTO",
+      "bio": "Nikzad leads the scientific and technical development of New Path's synthetic PDC platform, overseeing chemistry, candidate selection, and preclinical programmes. He previously worked as a Research Associate in Prof. Ley's Innovative Technology Centre at the University of Cambridge.",
+      "linkedin": "https://www.linkedin.com/in/nikzad-nikbin-1833a4403/"
+    },
+    {
+      "initials": "SL",
+      "name": "Prof Steve Ley",
+      "role": "Founder",
+      "bio": "Steve is one of the world's leading synthetic chemists and BP (1702) Professor of Chemistry at the University of Cambridge. A founding scientific advisor to New Path Molecular, he provides foundational expertise in complex molecule synthesis."
+    }
+  ]
+}
