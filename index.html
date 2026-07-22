@@ -229,7 +229,7 @@
       color: var(--teal-light);
     }
     .hero-lead {
-      font-size: clamp(1.15rem, 2vw, 1.55rem);
+      font-size: clamp(1.61rem, 2.79vw, 2.18rem);
       color: rgba(255,255,255,.72);
       max-width: none;
       line-height: 1.65;
@@ -245,7 +245,7 @@
       padding-left: 1rem;
     }
     .hero-stat-label {
-      font-size: .68rem;
+      font-size: 1.05rem;
       font-weight: 700;
       letter-spacing: .1em;
       text-transform: uppercase;
@@ -253,7 +253,7 @@
       margin-bottom: .2rem;
     }
     .hero-stat-value {
-      font-size: .88rem;
+      font-size: 1.3rem;
       color: rgba(255,255,255,.88);
       line-height: 1.4;
     }
@@ -330,6 +330,8 @@
 
     /* ── APPROACH (mechanism) ── */
     #approach { background: var(--white); }
+    #mechanism { background: var(--white); }
+    #risk { background: var(--white); }
     .approach-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -528,44 +530,24 @@
     .risk-card {
       flex: 1;
       min-width: 220px;
-      min-height: 160px;
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 2rem 1.75rem;
-      cursor: default;
-      position: relative;
-      overflow: hidden;
       background: var(--off);
-      transition: background .3s, border-color .3s;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
+      gap: .75rem;
     }
-    .risk-card:hover { background: var(--white); border-color: var(--teal); }
     .risk-front {
-      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-size: clamp(1.28rem, 2.31vw, 1.62rem);
       font-weight: 700;
       color: var(--teal-dark);
-      transition: opacity .25s, transform .25s;
-      text-align: center;
     }
     .risk-back {
-      position: absolute;
-      inset: 0;
-      padding: 1.75rem;
       font-size: .88rem;
       line-height: 1.7;
       color: var(--charcoal);
-      background: var(--white);
-      border-radius: 10px;
-      opacity: 0;
-      transform: translateY(8px);
-      transition: opacity .25s, transform .25s;
-      display: flex;
-      align-items: center;
     }
-    .risk-card:hover .risk-front { opacity: 0; transform: translateY(-8px); }
-    .risk-card:hover .risk-back  { opacity: 1; transform: translateY(0); }
 
     /* ── IP ── */
     #ip { background: var(--off); }
@@ -767,6 +749,11 @@
       .ip-feature  { grid-template-columns: 1fr; }
       .ip-visual   { display: none; }
       #home { padding: 0 1.5rem 5rem; }
+      #home h1 { font-size: clamp(2rem, 10vw, 4rem); }
+      .approach-grid { grid-template-columns: 1fr; }
+      .risk-card { min-width: 100%; }
+      .table-wrap { font-size: .75rem; }
+      .hero-stats { gap: 1.25rem; }
     }
   </style>
   <script type="application/ld+json">
@@ -857,9 +844,7 @@
       New Path Molecular is developing drug conjugates to treat solid tumours, addressing a biomarker present across most solid tumours, independent of genetic profile.
     </p>
 
-    <div class="hero-spacer"></div>
-
-    <div class="hero-stats reveal reveal-delay-3">
+    <div class="hero-stats reveal reveal-delay-3" style="margin-top:2rem;">
       <div class="hero-stat">
         <div class="hero-stat-label">Funding</div>
         <div class="hero-stat-value">Innovate UK-funded</div>
@@ -885,7 +870,7 @@
 <section id="video" style="padding: 5rem 2.5rem; background: var(--charcoal2);">
   <div class="section-inner">
     <div class="section-label reveal" style="color:var(--teal-light);">The team</div>
-    <h2 class="section-title reveal" style="color:var(--white);">In their own words</h2>
+    <h2 class="section-title reveal" style="color:var(--white);">How we are developing cutting edge organic chemistry</h2>
     <div class="reveal" style="margin-top:2.5rem; border-radius:12px; overflow:hidden; box-shadow: 0 8px 40px rgba(0,0,0,.4); position:relative; padding-bottom:56.25%; height:0;">
       <iframe
         src="https://www.youtube.com/embed/G4aE2thq1vc?si=FflFZIwJOyIFfJ3P"
@@ -897,6 +882,34 @@
         style="position:absolute;top:0;left:0;width:100%;height:100%;"
       ></iframe>
     </div>
+  </div>
+</section>
+
+<!-- ═══ APPROACH ═══ -->
+<section id="approach">
+  <div class="section-inner">
+    <div class="section-label reveal">Our approach</div>
+    <h2 class="section-title reveal">Synthetic chemistry vs. biologics</h2>
+    <p class="section-lead reveal">A pan-tumour biomarker. A modality gap. A synthetic solution.</p>
+
+    <div class="approach-grid">
+      <div class="approach-card reveal reveal-delay-1">
+        <div class="approach-num">01</div>
+        <h3>A conserved, pan-tumour biomarker</h3>
+        <p>Phosphatidylserine (PS) is exposed on cancer cell membranes across tumour types, regardless of genetics.</p>
+      </div>
+      <div class="approach-card reveal reveal-delay-2">
+        <div class="approach-num">02</div>
+        <h3>Unreachable by existing modalities</h3>
+        <p>When there are no accessible binding sites for antibodies, PS is a high-value target that current drugs cannot exploit.</p>
+      </div>
+      <div class="approach-card reveal reveal-delay-3">
+        <div class="approach-num">03</div>
+        <h3>Solved with a synthetic PDC</h3>
+        <p>PDC-1 binds to PS directly and only then releases an SN-38 payload, sparing healthy tissue.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -987,36 +1000,54 @@
     <p class="reveal" style="margin-top:1.5rem; font-size:.8rem; color:var(--muted); line-height:1.6;">
       For detailed milestone schedules or formal diligence enquiries, please <a href="mailto:info@newpathmolecular.com" style="color:var(--teal); text-decoration:underline;">contact us directly</a>.
     </p>
+
+    <div class="reveal" style="margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border); font-size:.73rem; color:var(--muted); line-height:1.8; display:flex; flex-wrap:wrap; gap:.25rem 2rem;">
+      <span><strong>PDC</strong> — Protein Drug Conjugate</span>
+      <span><strong>PS</strong> — Phosphatidylserine</span>
+      <span><strong>SN-38</strong> — Active metabolite of Irinotecan (cytotoxic payload)</span>
+      <span><strong>IND</strong> — Investigational New Drug (US FDA)</span>
+      <span><strong>CTA</strong> — Clinical Trial Authorisation (UK MHRA)</span>
+    </div>
   </div>
 </section>
 
-<!-- ═══ APPROACH ═══ -->
-<section id="approach">
+<!-- ═══ DATA ═══ -->
+<section id="data">
   <div class="section-inner">
-    <div class="section-label reveal">Our approach</div>
-    <h2 class="section-title reveal">Synthetic chemistry where biologics cannot go</h2>
-    <p class="section-lead reveal">A pan-tumour biomarker. A modality gap. A synthetic solution.</p>
+    <div class="section-label reveal">Preclinical evidence</div>
+    <h2 class="section-title reveal">What the data show</h2>
+    <p class="section-lead reveal">Reproducible findings across colon and pancreatic cancer models from PDC-1 trials.</p>
 
-    <div class="approach-grid">
-      <div class="approach-card reveal reveal-delay-1">
-        <div class="approach-num">01</div>
-        <h3>A conserved, pan-tumour biomarker</h3>
-        <p>Phosphatidylserine (PS) is exposed on cancer cell membranes across tumour types, regardless of genetics.</p>
+    <div class="data-split">
+      <div class="data-card reveal reveal-delay-1">
+        <div class="data-card-tag">Target Validation</div>
+        <h3>PS exposure confirmed across tumour types</h3>
+        <p>Independent groups have replicated PS exposure on cancer membranes regardless of genetic profile, validating the pan-tumour hypothesis.</p>
       </div>
-      <div class="approach-card reveal reveal-delay-2">
-        <div class="approach-num">02</div>
-        <h3>Unreachable by existing modalities</h3>
-        <p>When there are no accessible binding sites for antibodies, PS is a high-value target that current drugs cannot exploit.</p>
+      <div class="data-card reveal reveal-delay-2">
+        <div class="data-card-tag">In Vivo Efficacy</div>
+        <h3>Efficacy at lower dose than standard of care</h3>
+        <p>PDC-1 has demonstrated superior efficacy to irinotecan in colon and pancreatic cancer models, supporting IND/CTA-enabling studies.</p>
       </div>
-      <div class="approach-card reveal reveal-delay-3">
-        <div class="approach-num">03</div>
-        <h3>Solved with a synthetic PDC</h3>
-        <p>PDC-1 binds to PS directly and only then releases an SN-38 payload, sparing healthy tissue.</p>
+      <div class="data-card reveal reveal-delay-3">
+        <div class="data-card-tag">Safety</div>
+        <h3>No organ toxicity observed</h3>
+        <p>No detectable toxicity across preclinical safety assessments of liver, kidney, or gut. This is in contrast to standard-of-care irinotecan.</p>
+      </div>
+      <div class="data-card reveal reveal-delay-4">
+        <div class="data-card-tag">Patent</div>
+        <h3>IP filed</h3>
+        <p>Patent application filed covering the PDC-1 drug conjugate series. Further details available under NDA.</p>
       </div>
     </div>
 
+    <div class="data-note reveal">
+      <strong>Preclinical data only.</strong> Clinical safety and efficacy have not yet been established.
+    </div>
   </div>
 </section>
+
+<!-- ═══ IP ═══ -->
 
 <!-- ═══ MECHANISM ═══ -->
 <section id="mechanism">
@@ -1114,44 +1145,6 @@
     </div>
   </div>
 </section>
-
-<!-- ═══ DATA ═══ -->
-<section id="data">
-  <div class="section-inner">
-    <div class="section-label reveal">Preclinical evidence</div>
-    <h2 class="section-title reveal">What the data show</h2>
-    <p class="section-lead reveal">Reproducible findings across colon and pancreatic cancer models.</p>
-
-    <div class="data-split">
-      <div class="data-card reveal reveal-delay-1">
-        <div class="data-card-tag">Target Validation</div>
-        <h3>PS exposure confirmed across tumour types</h3>
-        <p>Independent groups have replicated PS exposure on cancer membranes regardless of genetic profile, validating the pan-tumour hypothesis.</p>
-      </div>
-      <div class="data-card reveal reveal-delay-2">
-        <div class="data-card-tag">In Vivo Efficacy</div>
-        <h3>Efficacy at lower dose than standard of care</h3>
-        <p>PDC-1 has demonstrated superior efficacy to irinotecan in colon and pancreatic cancer models, supporting IND/CTA-enabling studies.</p>
-      </div>
-      <div class="data-card reveal reveal-delay-3">
-        <div class="data-card-tag">Safety</div>
-        <h3>No organ toxicity observed</h3>
-        <p>No detectable toxicity across preclinical safety assessments of liver, kidney, or gut. This is in contrast to standard-of-care irinotecan.</p>
-      </div>
-      <div class="data-card reveal reveal-delay-4">
-        <div class="data-card-tag">Patent</div>
-        <h3>IP filed</h3>
-        <p>Patent application filed covering the PDC-1 drug conjugate series. Further details available under NDA.</p>
-      </div>
-    </div>
-
-    <div class="data-note reveal">
-      <strong>Preclinical data only.</strong> Clinical safety and efficacy have not yet been established.
-    </div>
-  </div>
-</section>
-
-<!-- ═══ IP ═══ -->
 
 <!-- ═══ TEAM ═══ -->
 <section id="team">
