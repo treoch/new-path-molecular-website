@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NPMR-047 | PS-targeted synthetic drug conjugate | New Path Molecular</title>
+  <meta name="description" content="NPMR-047 is New Path Molecular's lead preclinical asset: a fully synthetic phosphatidylserine-targeted drug conjugate carrying SN-38, in development for colorectal and pancreatic cancer." />
+  <meta property="og:title" content="NPMR-047 | PS-targeted synthetic drug conjugate" />
+  <meta property="og:description" content="NPMR-047 is New Path Molecular's preclinical synthetic drug conjugate targeting externalised phosphatidylserine and delivering an SN-38 payload in solid tumours." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Drug",
+        "@id": "https://newpathmolecular.com/pipeline/nmpr-047.html#drug",
+        "name": "NPMR-047",
+        "alternateName": ["PDC-1"],
+        "description": "An investigational fully synthetic phosphatidylserine-targeted drug conjugate carrying an SN-38 payload for colorectal and pancreatic cancer.",
+        "url": "https://newpathmolecular.com/pipeline/nmpr-047.html",
+        "manufacturer": {
+          "@type": "Organization",
+          "@id": "https://newpathmolecular.com/#organization",
+          "name": "New Path Molecular Research Ltd"
+        },
+        "activeIngredient": "SN-38",
+        "drugClass": "Synthetic phosphatidylserine-targeted drug conjugate",
+        "legalStatus": "Investigational preclinical candidate; not approved for clinical use",
+        "relevantSpecialty": "Oncology"
+      },
+      {
+        "@type": "MedicalCondition",
+        "@id": "https://newpathmolecular.com/pipeline/nmpr-047.html#colorectal",
+        "name": "Colorectal adenocarcinoma"
+      },
+      {
+        "@type": "MedicalCondition",
+        "@id": "https://newpathmolecular.com/pipeline/nmpr-047.html#pdac",
+        "name": "Pancreatic ductal adenocarcinoma"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:       #2a9d8f;
+      --teal-light: #85c4a8;
+      --teal-dark:  #1e6b58;
+      --teal-mid:   #3ab49a;
+      --teal-wash:  rgba(42,157,143,.08);
+      --charcoal:   #2d2d2d;
+      --charcoal2:  #1a1a1a;
+      --white:      #FFFFFF;
+      --off:        #F6F8FA;
+      --muted:      #5f6f78;
+      --border:     #dde3e8;
+      --font:       'Montserrat', system-ui, sans-serif;
+      --accent:     #e8a838;
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── HEADER matching main site ── */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(26,26,26,.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    nav {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 2.5rem;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .logo-img { height: 48px; width: auto; flex-shrink: 0; border-radius: 6px; background: #fff; padding: 4px; }
+    .logo-text {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: .01em;
+      line-height: 1.2;
+    }
+    .logo-text span {
+      display: block;
+      font-size: .62rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal-light);
+    }
+    .nav-links {
+      display: flex;
+      gap: .1rem;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      display: block;
+      padding: .4rem .85rem;
+      font-size: .83rem;
+      font-weight: 500;
+      letter-spacing: .04em;
+      color: rgba(255,255,255,.6);
+      border-radius: 4px;
+      text-decoration: none;
+      transition: color .2s, background .2s;
+    }
+    .nav-links a:hover { color: var(--white); background: rgba(255,255,255,.07); }
+    .nav-links a.active-page { color: var(--teal-light); font-weight: 700; }
+
+    /* ── SECTION LAYOUT matching main site ── */
+    section { padding: 5rem 2.5rem; }
+    .section-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    .section-label {
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: .75rem;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .section-label::before {
+      content: '';
+      display: block;
+      width: 22px;
+      height: 1px;
+      background: var(--teal);
+    }
+    h2.section-title {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      color: var(--charcoal);
+      line-height: 1.2;
+      letter-spacing: -.02em;
+      margin-bottom: 1.2rem;
+    }
+    .section-lead {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 580px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    /* ── HERO matching main site dark bg ── */
+    .asset-hero {
+      background: var(--charcoal2);
+      padding: 5rem 2.5rem;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+    .asset-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(145deg, #1a1a2e 0%, #1e3a52 40%, #2d4a3e 100%);
+      opacity: .95;
+    }
+    .asset-hero-inner {
+      position: relative;
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--teal-light);
+      margin-bottom: 1.5rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 1px;
+      background: var(--teal-light);
+    }
+    .asset-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: var(--white);
+      letter-spacing: -.03em;
+      margin-bottom: .75rem;
+    }
+    .asset-hero h1 span { color: var(--teal-light); }
+    .asset-hero-sub {
+      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      color: rgba(255,255,255,.65);
+      max-width: 640px;
+      margin-bottom: 2.5rem;
+      line-height: 1.65;
+    }
+    .asset-status-bar {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+      padding-top: 1.75rem;
+      border-top: 1px solid rgba(255,255,255,.1);
+    }
+    .asi-label {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--teal-light);
+      margin-bottom: .2rem;
+    }
+    .asi-value {
+      font-size: .95rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    /* ── FACT TABLE ── */
+    .fact-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .88rem;
+    }
+    .fact-table tr { border-bottom: 1px solid var(--border); }
+    .fact-table tr:last-child { border-bottom: none; }
+    .fact-table th {
+      text-align: left;
+      padding: .85rem 1.25rem;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      background: var(--charcoal);
+      color: rgba(255,255,255,.7);
+      width: 28%;
+    }
+    .fact-table td {
+      padding: .85rem 1.25rem;
+      color: var(--charcoal);
+      line-height: 1.55;
+    }
+    .fact-table tr:nth-child(odd) td { background: var(--off); }
+    .fact-table tr:nth-child(even) td { background: var(--white); }
+    .fact-badge {
+      display: inline-block;
+      padding: .2rem .65rem;
+      background: var(--teal-wash);
+      color: var(--teal-dark);
+      border-radius: 4px;
+      font-size: .78rem;
+      font-weight: 700;
+    }
+
+    /* ── DATA CARDS matching main site ── */
+    .slide-figures {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    .slide-fig {
+      margin: 0;
+    }
+    .slide-fig img {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .slide-fig figcaption {
+      margin-top: .6rem;
+      font-size: .8rem;
+      color: var(--muted);
+      max-width: 900px;
+      line-height: 1.6;
+    }
+    .data-split {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .data-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.75rem;
+    }
+    .data-card-tag {
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: .6rem;
+    }
+    .data-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: .5rem;
+      color: var(--charcoal);
+    }
+    .data-card p {
+      font-size: .85rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .stat-highlight {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+      line-height: 1;
+      margin-bottom: .3rem;
+    }
+    .stat-context {
+      font-size: .72rem;
+      color: var(--muted);
+      margin-top: .4rem;
+      padding-top: .4rem;
+      border-top: 1px solid var(--border);
+    }
+    .data-note {
+      margin-top: 1.5rem;
+      padding: 1rem 1.25rem;
+      background: var(--off);
+      border-left: 3px solid var(--teal-light);
+      border-radius: 0 6px 6px 0;
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ── DERISK CARDS ── */
+    .derisk-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    .derisk-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--white);
+    }
+    .derisk-card-head {
+      background: var(--charcoal);
+      color: var(--white);
+      padding: 1rem 1.25rem;
+      font-size: .88rem;
+      font-weight: 700;
+    }
+    .derisk-item {
+      padding: .65rem 1.25rem;
+      font-size: .82rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: .6rem;
+      align-items: flex-start;
+      color: var(--charcoal);
+      line-height: 1.5;
+    }
+    .derisk-item:last-child { border-bottom: none; }
+    .derisk-tick { color: var(--teal); font-weight: 700; flex-shrink: 0; margin-top: .05rem; }
+    .derisk-item.remaining { color: var(--muted); }
+    .derisk-item.remaining .derisk-tick { color: var(--accent); }
+
+    /* ── MILESTONE LIST ── */
+    .milestone-list {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .milestone-item {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 2rem;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: start;
+    }
+    .milestone-item:last-child { border-bottom: none; }
+    .m-date {
+      font-size: .75rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+      padding-top: .2rem;
+    }
+    .m-badge {
+      display: inline-block;
+      padding: .15rem .55rem;
+      background: var(--teal-wash);
+      color: var(--teal-dark);
+      border-radius: 4px;
+      font-size: .68rem;
+      font-weight: 700;
+      margin-bottom: .4rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .m-badge.current { background: var(--teal-dark); color: var(--white); }
+    .m-title { font-weight: 700; font-size: .95rem; margin-bottom: .3rem; color: var(--charcoal); }
+    .m-body { font-size: .83rem; color: var(--muted); line-height: 1.65; }
+
+    /* ── CTA matching main site ── */
+    #contact {
+      background: linear-gradient(135deg, var(--charcoal2) 0%, #1a3a2e 50%, var(--teal-dark) 100%);
+      padding: 6rem 2.5rem;
+      text-align: center;
+      color: var(--white);
+    }
+    #contact h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: .75rem; font-weight: 700; }
+    #contact p { color: rgba(255,255,255,.65); margin-bottom: 2rem; font-size: 1rem; }
+    .cta-btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: var(--teal);
+      color: var(--white);
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .9rem;
+      letter-spacing: .04em;
+      transition: background .2s;
+    }
+    .cta-btn:hover { background: var(--teal-dark); }
+
+    /* ── FOOTER matching main site ── */
+    footer {
+      background: var(--charcoal2);
+      color: rgba(255,255,255,.35);
+      padding: 2rem 2.5rem;
+      font-size: .73rem;
+      line-height: 1.6;
+    }
+    .footer-inner {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer a { color: rgba(255,255,255,.35); text-decoration: none; }
+    footer a:hover { color: var(--teal-light); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; }
+      section { padding: 3.5rem 1.5rem; }
+      .asset-hero { padding: 3.5rem 1.5rem; }
+      .fact-table th { width: 40%; }
+      .milestone-item { grid-template-columns: 1fr; gap: .5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <nav>
+    <a class="logo" href="../index.html">
+      <img class="logo-img" src="../logo.png" alt="New Path Molecular logo" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html#approach">Approach</a></li>
+      <li><a href="../index.html#pipeline">Pipeline</a></li>
+      <li><a href="../index.html#mechanism">Mechanism</a></li>
+      <li><a href="../index.html#data">Data</a></li>
+      <li><a href="../index.html#team">Team</a></li>
+      <li><a href="../index.html#news">News</a></li>
+      <li><a href="nmpr-047.html" class="active-page" style="color:var(--teal-light);font-weight:700;">NPMR-047 ↗</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ── HERO ── -->
+<section class="asset-hero">
+  <div class="asset-hero-inner">
+    <div class="hero-eyebrow">Lead asset · New Path Molecular</div>
+    <h1>NPMR-047 <span>/ PDC-1</span></h1>
+    <p class="asset-hero-sub">A fully synthetic phosphatidylserine-targeted drug conjugate carrying SN-38, in preclinical development for colorectal and pancreatic cancer.</p>
+    <div class="asset-status-bar">
+      <div>
+        <div class="asi-label">Stage</div>
+        <div class="asi-value">Candidate Selection</div>
+      </div>
+      <div>
+        <div class="asi-label">Modality</div>
+        <div class="asi-value">Synthetic drug conjugate</div>
+      </div>
+      <div>
+        <div class="asi-label">Target</div>
+        <div class="asi-value">Phosphatidylserine (PS)</div>
+      </div>
+      <div>
+        <div class="asi-label">Payload</div>
+        <div class="asi-value">SN-38</div>
+      </div>
+      <div>
+        <div class="asi-label">Next milestone</div>
+        <div class="asi-value">CTA-enabling studies</div>
+      </div>
+      <div>
+        <div class="asi-label">Clinical status</div>
+        <div class="asi-value">Preclinical. Not approved.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ASSET FACT SHEET ── -->
+<section style="background:var(--off);">
+  <div class="section-inner">
+    <div class="section-label">Asset record</div>
+    <h2 class="section-title">NPMR-047 Asset Facts</h2>
+    <p class="section-lead">A structured summary for investors, analysts and business development teams. Scientific content last reviewed: July 2026.</p>
+    <div style="overflow-x:auto;">
+      <table class="fact-table">
+        <tr><th>Asset identifier</th><td><strong>NPMR-047</strong></td></tr>
+        <tr><th>Alternative name</th><td>PDC-1</td></tr>
+        <tr><th>Modality</th><td>Fully synthetic phosphatidylserine-targeted drug conjugate</td></tr>
+        <tr><th>Target / biomarker</th><td>Externalised phosphatidylserine (PS) on tumour cell membrane and in tumour microenvironment</td></tr>
+        <tr><th>Targeting moiety</th><td>Synthetic PS-selective binding peptide</td></tr>
+        <tr><th>Linker</th><td>Proprietary tumour-microenvironment-cleavable linker</td></tr>
+        <tr><th>Payload</th><td>SN-38, active metabolite of Irinotecan. Topoisomerase I inhibitor.</td></tr>
+        <tr><th>Lead indications</th><td>Colorectal adenocarcinoma; pancreatic ductal adenocarcinoma (PDAC)</td></tr>
+        <tr><th>Patient selection</th><td>Genetics-agnostic. NPMR-047 does not depend on a specific oncogenic mutation. Development-stage work is evaluating whether PS-expression characteristics can enrich for response.</td></tr>
+        <tr><th>Development stage</th><td><span class="fact-badge">Candidate Selection</span></td></tr>
+        <tr><th>Models tested</th><td>Mouse CDX models of colorectal cancer and pancreatic cancer; colon cancer xenograft model</td></tr>
+        <tr><th>Route of administration</th><td>Intravenous</td></tr>
+        <tr><th>Next milestone</th><td>Development candidate nomination, followed by CTA-enabling studies: CMC/GMP manufacture, GLP toxicology, and regulatory package preparation</td></tr>
+        <tr><th>Target date</th><td>Clinical Trial Authorisation targeted for 2028</td></tr>
+        <tr><th>Patent status</th><td>Patent application filed covering NPMR-047 drug conjugate series. Further details available under NDA.</td></tr>
+        <tr><th>Funding</th><td>£800,000 Innovate UK / CRUK Biomedical Catalyst Grant (2025); £100,000 Innovate UK Feasibility Study Grant (2024)</td></tr>
+        <tr><th>Partnering status</th><td>Seeking £5M Series A to reach Clinical Trial Authorisation. Co-development and licensing discussions welcome.</td></tr>
+        <tr><th>Approved for clinical use</th><td>No. Investigational preclinical candidate only.</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRECLINICAL DATA ── -->
+<section>
+  <div class="section-inner">
+    <div class="section-label">Preclinical evidence</div>
+    <h2 class="section-title">What the data show</h2>
+    <p class="section-lead">Key findings from non-GLP exploratory efficacy and safety studies. All data are preclinical. Clinical safety and efficacy have not yet been established.</p>
+
+    <div class="slide-figures">
+      <figure class="slide-fig">
+        <img src="data-efficacy-pancreatic.png" alt="Chart showing NPMR-047 delivered 97% tumour growth inhibition versus 25% for Irinotecan in a mouse CDX model of pancreatic cancer" />
+        <figcaption><strong>Efficacy · Mouse CDX model · Pancreatic cancer.</strong> NPMR-047 delivered 97% tumour growth inhibition versus 25% for Irinotecan, at a lower equivalent human dose (108 mg/m² versus 125 mg/m²). Non-GLP exploratory study, n=4.</figcaption>
+      </figure>
+
+      <figure class="slide-fig">
+        <img src="data-selectivity.png" alt="Bar charts showing payload release rises to 90% in tumour tissue by day 7, while remaining at 10% in liver and kidney" />
+        <figcaption><strong>Tumour-selective activation.</strong> Payload release rises to 90% in tumour tissue by day 7 following a single dose, while remaining at 10% in liver and kidney throughout. Non-GLP exploratory pharmacokinetic study.</figcaption>
+      </figure>
+
+      <figure class="slide-fig">
+        <img src="data-safety.png" alt="Histology samples comparing vehicle versus NPMR-047, showing no detectable changes in liver, kidney or jejunum tissue" />
+        <figcaption><strong>Safety · Histopathology.</strong> Representative histology samples show no treatment-related changes in liver, kidney or jejunum tissue versus vehicle control. Non-GLP exploratory study. GLP toxicology is planned as part of the CTA-enabling programme.</figcaption>
+      </figure>
+    </div>
+
+    <div class="data-note">
+      <strong>Preclinical data only.</strong> All findings are from non-GLP exploratory studies in mouse models. Clinical safety and efficacy in humans have not yet been established. GLP toxicology, formal safety pharmacology and clinical translation studies are planned as part of the CTA-enabling programme.
+    </div>
+  </div>
+</section>
+
+<!-- ── DE-RISKING ── -->
+<section style="background:var(--off);">
+  <div class="section-inner">
+    <div class="section-label">Risk profile</div>
+    <h2 class="section-title">How we are reducing development risk</h2>
+    <p class="section-lead">A frank summary of what has been established in preclinical studies and what remains to be completed before clinical entry.</p>
+
+    <div class="derisk-grid">
+      <div class="derisk-card">
+        <div class="derisk-card-head">Biology de-risking</div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>PS exposure established in relevant tumour models</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>PS-binder selectivity demonstrated</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Efficacy reproduced in colorectal and pancreatic models</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Tumour accumulation confirmed. Payload detected more than 7 days post-dose.</span></div>
+        <div class="derisk-item remaining"><span class="derisk-tick">→</span><span>Remaining: broader human-tissue validation and translational PK/PD</span></div>
+      </div>
+
+      <div class="derisk-card">
+        <div class="derisk-card-head">Molecule de-risking</div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Fully synthetic, defined composition</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Established SN-38 payload with a known clinical record</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Tumour-associated linker cleavage strategy confirmed</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>PS biomarker already FDA-cleared for clinical trial use</span></div>
+        <div class="derisk-item remaining"><span class="derisk-tick">→</span><span>Remaining: candidate nomination, full PK/PD, biodistribution and GLP toxicology</span></div>
+      </div>
+
+      <div class="derisk-card">
+        <div class="derisk-card-head">CMC de-risking</div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Commercially available starting materials</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Convergent chemical synthesis. No cell lines or fermentation required.</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>No cold chain or antibody manufacturing required</span></div>
+        <div class="derisk-item"><span class="derisk-tick">✓</span><span>Supported by £900k non-dilutive funding before investor capital is deployed</span></div>
+        <div class="derisk-item remaining"><span class="derisk-tick">→</span><span>Remaining: process development, analytical methods, formulation and GMP transfer</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PATH TO CTA ── -->
+<section>
+  <div class="section-inner">
+    <div class="section-label">Development plan</div>
+    <h2 class="section-title">Path to Clinical Trial Authorisation</h2>
+    <p class="section-lead">£5M funds the next value inflection: reaching CTA with NPMR-047.</p>
+
+    <div class="milestone-list">
+      <div class="milestone-item">
+        <div class="m-date">Now</div>
+        <div>
+          <div class="m-badge current">Current stage</div>
+          <div class="m-title">Candidate Selection</div>
+          <div class="m-body">NPMR-047 is the designated lead asset. Preclinical efficacy established in two tumour models. Early safety data are supportive. Patent application filed.</div>
+        </div>
+      </div>
+      <div class="milestone-item">
+        <div class="m-date">2026 to 2027</div>
+        <div>
+          <div class="m-badge">CMC / GMP</div>
+          <div class="m-title">Clinical-grade manufacturing</div>
+          <div class="m-body">Process development, analytical methods, formulation and GMP transfer to enable clinical-grade supply of NPMR-047.</div>
+        </div>
+      </div>
+      <div class="milestone-item">
+        <div class="m-date">2027</div>
+        <div>
+          <div class="m-badge">Safety</div>
+          <div class="m-title">GLP toxicology package</div>
+          <div class="m-body">Formal GLP safety pharmacology and toxicology studies in two animal species to support the CTA submission.</div>
+        </div>
+      </div>
+      <div class="milestone-item">
+        <div class="m-date">2028</div>
+        <div>
+          <div class="m-badge">Regulatory</div>
+          <div class="m-title">CTA preparation and submission</div>
+          <div class="m-body">Compilation and submission of the Clinical Trial Authorisation package to the UK MHRA, targeted for H1 2028.</div>
+        </div>
+      </div>
+      <div class="milestone-item">
+        <div class="m-date">2028 to 2029</div>
+        <div>
+          <div class="m-badge">Clinical</div>
+          <div class="m-title">Phase 1/2a readiness</div>
+          <div class="m-body">First-in-human Phase 1/2a trial preparation. Two potential licensing points: post-CTA and post-human proof of concept.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section id="contact">
+  <div class="section-label" style="justify-content:center;color:var(--teal-light);">Get in touch</div>
+  <h2>Interested in NPMR-047?</h2>
+  <p>Contact us for diligence materials, partnering discussions or investor information.</p>
+  <a class="cta-btn" href="mailto:info@newpathmolecular.com">Contact the team</a>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <span>New Path Molecular Research Ltd · Babraham Research Campus, Cambridge</span>
+    <span>NPMR-047 is an investigational preclinical asset. Not approved for clinical use. All data are preclinical.</span>
+    <a href="../index.html">Back to main site</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+{
+  "company": {
+    "legal_name": "New Path Molecular Research Ltd",
+    "company_number": "09412383",
+    "location": "Babraham Research Campus, Cambridge, CB22 3AT, United Kingdom",
+    "website": "https://newpathmolecular.com"
+  },
+  "last_updated": "2026-08-03",
+  "assets": [
+    {
+      "asset_id": "NMPR-047",
+      "aliases": ["PDC-1"],
+      "status": "active",
+      "modality": "fully synthetic phosphatidylserine-targeted drug conjugate",
+      "target": {
+        "name": "phosphatidylserine",
+        "context": "externalised tumour-associated phosphatidylserine on cancer cell membranes and in the tumour microenvironment"
+      },
+      "targeting_moiety": "proprietary PS-selective synthetic binder",
+      "linker": "tumour-microenvironment-cleavable proprietary linker",
+      "payload": {
+        "name": "SN-38",
+        "mechanism": "topoisomerase I inhibition"
+      },
+      "indications": [
+        {
+          "name": "colorectal adenocarcinoma",
+          "mesh_id": "D015179",
+          "nci_thesaurus": "C4978"
+        },
+        {
+          "name": "pancreatic ductal adenocarcinoma",
+          "mesh_id": "D021441",
+          "nci_thesaurus": "C8294"
+        }
+      ],
+      "stage": "candidate selection",
+      "next_milestone": "development candidate nomination",
+      "target_date": "H1 2028 (IND/CTA readiness)",
+      "clinical_status": "preclinical",
+      "approved": false,
+      "route_of_administration": "intravenous",
+      "patient_selection": "genetics-agnostic; does not depend on a specific oncogenic mutation",
+      "preclinical_evidence": [
+        {
+          "study_type": "non-GLP exploratory efficacy",
+          "model": "mouse CDX model",
+          "indication": "pancreatic cancer",
+          "comparator": "irinotecan",
+          "primary_endpoint": "tumour growth inhibition",
+          "result": "97% tumour growth inhibition with NMPR-047 versus 25% with irinotecan",
+          "dose_nmpr047": "108 mg/m² equivalent human dose",
+          "dose_comparator": "125 mg/m² equivalent human dose",
+          "tolerability": "no treatment-related histopathological changes observed",
+          "study_status": "completed"
+        },
+        {
+          "study_type": "non-GLP exploratory pharmacokinetics",
+          "model": "mouse",
+          "primary_endpoint": "payload release in tumour versus normal tissue",
+          "result": "90% payload release in tumour tissue by day 7; approximately 10% in liver and kidney throughout",
+          "study_status": "completed"
+        },
+        {
+          "study_type": "non-GLP exploratory efficacy",
+          "model": "colon cancer xenograft",
+          "indication": "colorectal cancer",
+          "primary_endpoint": "tumour growth inhibition",
+          "result": "tumour growth completely inhibited relative to vehicle control",
+          "study_status": "completed"
+        },
+        {
+          "study_type": "non-GLP exploratory safety",
+          "model": "mouse",
+          "primary_endpoint": "histopathology",
+          "tissues_assessed": ["liver", "kidney", "jejunum"],
+          "result": "no treatment-related histopathological changes observed versus vehicle control",
+          "note": "GLP toxicology has not yet been completed and is planned as part of the CTA-enabling programme",
+          "study_status": "completed"
+        }
+      ],
+      "patent_status": "patent application filed covering the NMPR-047 drug conjugate series; further details available under NDA",
+      "funding": [
+        {
+          "funder": "Innovate UK",
+          "programme": "Biomedical Catalyst",
+          "award": "£800,000",
+          "year": 2025
+        },
+        {
+          "funder": "Innovate UK",
+          "programme": "Feasibility Study",
+          "award": "£100,000",
+          "year": 2024
+        }
+      ],
+      "partnering_status": "seeking £5M Series A to reach Clinical Trial Authorisation; co-development and licensing discussions welcome",
+      "asset_page": "https://newpathmolecular.com/pipeline/nmpr-047.html"
+    },
+    {
+      "asset_id": "PDC-2",
+      "aliases": [],
+      "status": "active",
+      "modality": "PS-targeting platform",
+      "target": {
+        "name": "phosphatidylserine",
+        "context": "externalised tumour-associated phosphatidylserine"
+      },
+      "indications": [
+        {
+          "name": "other high-PS solid tumours"
+        }
+      ],
+      "stage": "discovery",
+      "next_milestone": "lead identification",
+      "clinical_status": "preclinical",
+      "approved": false
+    }
+  ]
+}
