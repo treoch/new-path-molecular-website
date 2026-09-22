@@ -48,7 +48,7 @@
           "indication": "pancreatic cancer",
           "comparator": "irinotecan",
           "primary_endpoint": "tumour growth inhibition",
-          "result": "97% tumour growth inhibition with NMPR-047 versus 25% with irinotecan",
+          "result": "110% tumour growth inhibition (tumour regression) with NMPR-047 versus 20% with irinotecan",
           "dose_nmpr047": "108 mg/m² equivalent human dose",
           "dose_comparator": "125 mg/m² equivalent human dose",
           "tolerability": "no treatment-related histopathological changes observed",
