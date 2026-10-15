@@ -204,7 +204,7 @@
     }
     #home h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 6vw;
+      font-size: clamp(2.6rem, 6vw, 6.5rem);
       font-weight: 600;
       color: #d4f5e8 !important;
       line-height: 1.2;
@@ -214,6 +214,17 @@
       flex-direction: column;
       gap: .25em;
     }
+    /* ── Hero headline stagger ── */
+    #hero-headline .hl {
+      display: block;
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    #hero-headline.revealed .hl-1 { opacity: 1; transform: none; transition-delay: 0s; }
+    #hero-headline.revealed .hl-2 { opacity: 1; transform: none; transition-delay: .28s; }
+    #hero-headline.revealed .hl-3 { opacity: 1; transform: none; transition-delay: .65s; }
+
     .hero-phrase {
       display: block;
       opacity: 0;
@@ -865,12 +876,12 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="#home"      class="nav-link" data-section="home">Home</a></li>
       <li><a href="#approach"  class="nav-link" data-section="approach">Approach</a></li>
+      <li><a href="#team"      class="nav-link" data-section="team">Team</a></li>
       <li><a href="#pipeline"  class="nav-link" data-section="pipeline">Pipeline</a></li>
       <li><a href="pipeline/nmpr-047.html" style="color:var(--teal);font-weight:700;">NMPR-047 ↗</a></li>
       <li><a href="#data"      class="nav-link" data-section="data">Data</a></li>
       <li><a href="#mechanism" class="nav-link" data-section="mechanism">Mechanism</a></li>
       <li><a href="#risk"      class="nav-link" data-section="risk">Risk Profile</a></li>
-      <li><a href="#team"      class="nav-link" data-section="team">Team</a></li>
       <li><a href="#news"      class="nav-link" data-section="news">News</a></li>
     </ul>
   </nav>
@@ -891,10 +902,11 @@
 
   <div class="hero-inner">
     <h1 id="hero-headline" style="color:#d4f5e8;">
-      <span class="hero-phrase" id="phrase-1">Chemo efficacy.</span>
-      <span class="hero-phrase" id="phrase-2">Without the toxicity.</span>
-      <span class="hero-phrase" id="phrase-3">Regardless of genetics.</span>
+      <span class="hl hl-1" style="font-weight:800; color:#fff;">Targeted therapy</span>
+      <span class="hl hl-2" style="font-weight:300;">for patients with</span>
+      <span class="hl hl-3" style="font-weight:800; color:#fff;">no targets<span style="color:var(--teal);">.</span></span>
     </h1>
+    <div class="hero-spacer"></div>
     <p class="hero-lead reveal reveal-delay-2">
       New Path Molecular is developing drug conjugates to treat solid tumours, addressing a biomarker present across most solid tumours, independent of genetic profile.
     </p>
@@ -943,7 +955,7 @@
 <!-- ═══ APPROACH ═══ -->
 <section id="approach">
   <div class="section-inner">
-    <div class="section-label reveal">Our approach</div>
+    <div class="section-label reveal">Approach</div>
     <h2 class="section-title reveal">Synthetic chemistry vs. biologics</h2>
     <p class="section-lead reveal">A pan-tumour biomarker. A modality gap. A synthetic solution.</p>
 
@@ -968,10 +980,23 @@
   </div>
 </section>
 
+<!-- ═══ TEAM ═══ -->
+<section id="team">
+  <div class="section-inner">
+    <div class="section-label reveal">Team</div>
+    <h2 class="section-title reveal">The team</h2>
+    <p class="section-lead reveal">Deep expertise in synthetic chemistry, oncology, and translational science.</p>
+
+    <div id="team-list">
+      <div class="sheets-loading">Loading...</div>
+    </div>
+  </div>
+</section>
+
 <!-- ═══ PIPELINE ═══ -->
 <section id="pipeline">
   <div class="section-inner">
-    <div class="section-label reveal">Development pipeline</div>
+    <div class="section-label reveal">Pipeline</div>
     <h2 class="section-title reveal">Our programmes</h2>
     <p class="section-lead reveal">NMPR-047 in candidate selection across two tumour types, with platform expansion planned. Pipeline current as of: 28 July 2026.</p>
 
@@ -1078,7 +1103,7 @@
 <!-- ═══ DATA ═══ -->
 <section id="data">
   <div class="section-inner">
-    <div class="section-label reveal">Preclinical evidence</div>
+    <div class="section-label reveal">Data</div>
     <h2 class="section-title reveal">What the data show</h2>
     <p class="section-lead reveal">Reproducible findings across colorectal adenocarcinoma and pancreatic ductal adenocarcinoma models from NMPR-047 trials.</p>
 
@@ -1116,8 +1141,8 @@
 <!-- ═══ MECHANISM ═══ -->
 <section id="mechanism">
   <div class="section-inner">
-    <div class="section-label reveal">Mechanism of action</div>
-    <h2 class="section-title reveal">How PDC-1 works</h2>
+    <div class="section-label reveal">Mechanism</div>
+    <h2 class="section-title reveal">How NMPR-047 works</h2>
     <div class="moa-sequence" style="margin-top:3.5rem;">
 
       <!-- Step 01 -->
@@ -1187,7 +1212,7 @@
 <!-- ═══ RISK PROFILE ═══ -->
 <section id="risk" style="padding-bottom:3rem;">
   <div class="section-inner">
-    <div class="section-label reveal">Risk profile</div>
+    <div class="section-label reveal">Risk Profile</div>
     <h2 class="section-title reveal">Risks? Addressed.</h2>
     <div style="display:flex;flex-direction:row;gap:1.5rem;margin-top:3rem;flex-wrap:wrap;">
 
@@ -1210,23 +1235,10 @@
   </div>
 </section>
 
-<!-- ═══ TEAM ═══ -->
-<section id="team">
-  <div class="section-inner">
-    <div class="section-label reveal">Leadership</div>
-    <h2 class="section-title reveal">The team</h2>
-    <p class="section-lead reveal">Deep expertise in synthetic chemistry, oncology, and translational science.</p>
-
-    <div id="team-list">
-      <div class="sheets-loading">Loading...</div>
-    </div>
-  </div>
-</section>
-
 <!-- ═══ NEWS ═══ -->
 <section id="news">
   <div class="section-inner">
-    <div class="section-label reveal">Updates</div>
+    <div class="section-label reveal">News</div>
     <h2 class="section-title reveal">News &amp; announcements</h2>
     <p class="section-lead reveal">Latest updates from New Path Molecular.</p>
     <div class="news-list" id="news-list">
@@ -1443,19 +1455,17 @@
   loadContent();
 
 
-  // ── Hero phrase auto-sequence (triggers once logo reaches nav) ──
-  const phrases = document.querySelectorAll('.hero-phrase');
-  let phrasesTriggered = false;
-  function triggerPhrases() {
-    if (phrasesTriggered) return;
-    phrasesTriggered = true;
-    phrases.forEach((phrase, i) => {
-      setTimeout(() => phrase.classList.add('visible'), i * 900);
-    });
+  // ── Hero headline stagger (triggers once logo reaches nav) ──
+  const heroHeadline = document.getElementById('hero-headline');
+  let headlineTriggered = false;
+  function triggerHeadline() {
+    if (headlineTriggered || !heroHeadline) return;
+    headlineTriggered = true;
+    heroHeadline.classList.add('revealed');
   }
   window.addEventListener('scroll', () => {
     const progress = Math.max(0, Math.min(1, window.scrollY / (window.innerHeight * 0.9)));
-    if (progress >= 0.75) triggerPhrases();
+    if (progress >= 0.75) triggerHeadline();
   }, { passive: true });
 </script>
 </body>
