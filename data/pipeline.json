@@ -8,7 +8,7 @@
   "last_updated": "2026-08-03",
   "assets": [
     {
-      "asset_id": "NMPR-047",
+      "asset_id": "NPMR-047",
       "aliases": ["PDC-1"],
       "status": "active",
       "modality": "fully synthetic phosphatidylserine-targeted drug conjugate",
@@ -48,7 +48,7 @@
           "indication": "pancreatic cancer",
           "comparator": "irinotecan",
           "primary_endpoint": "tumour growth inhibition",
-          "result": "110% tumour growth inhibition (tumour regression) with NMPR-047 versus 20% with irinotecan",
+          "result": "110% tumour growth inhibition (tumour regression) with NPMR-047 versus 20% with irinotecan",
           "dose_nmpr047": "108 mg/m² equivalent human dose",
           "dose_comparator": "125 mg/m² equivalent human dose",
           "tolerability": "no treatment-related histopathological changes observed",
@@ -79,12 +79,12 @@
           "study_status": "completed"
         }
       ],
-      "patent_status": "patent application filed covering the NMPR-047 drug conjugate series; further details available under NDA",
+      "patent_status": "patent application filed covering the NPMR-047 drug conjugate series; further details available under NDA",
       "funding": [
         {
           "funder": "Innovate UK",
           "programme": "Biomedical Catalyst",
-          "award": "£800,000",
+          "award": "£800k",
           "year": 2025
         },
         {
@@ -95,7 +95,7 @@
         }
       ],
       "partnering_status": "seeking £5M Series A to reach Clinical Trial Authorisation; co-development and licensing discussions welcome",
-      "asset_page": "https://newpathmolecular.com/pipeline/nmpr-047.html"
+      "asset_page": "https://newpathmolecular.com/pipeline/npmr-047.html"
     },
     {
       "asset_id": "PDC-2",

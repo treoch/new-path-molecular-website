@@ -1,6 +1,11 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "/pipeline/nmpr-047.html"
+  to   = "/pipeline/npmr-047.html"
+  status = 301
+
 [[headers]]
   for = "/admin/*"
   [headers.values]
