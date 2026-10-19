@@ -11,7 +11,7 @@
       "asset_id": "NPMR-047",
       "aliases": ["PDC-1"],
       "status": "active",
-      "modality": "fully synthetic phosphatidylserine-targeted drug conjugate",
+      "modality": "fully synthetic peptide drug conjugate",
       "target": {
         "name": "phosphatidylserine",
         "context": "externalised tumour-associated phosphatidylserine on cancer cell membranes and in the tumour microenvironment"
